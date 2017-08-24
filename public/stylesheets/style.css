@@ -1,0 +1,17 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(199, 233, 246);
+}
+
+a {
+  color: #00B7FF;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.checked span {
+  text-decoration: line-through;
+}
