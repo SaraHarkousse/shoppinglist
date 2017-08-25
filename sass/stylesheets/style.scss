@@ -1,3 +1,4 @@
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 $font-stack: "Lucida Grande", Helvetica, Arial, sans-serif;
 $background-color: #dff6ff;
 body {
@@ -26,5 +27,33 @@ body {
   }
   .hide {
     display: none;
+  }
+  .navbar-default {
+    background-image: none;
+    background-color: #25acdf;
+    // border-color: #c0392b;
+    .navbar-brand {
+      color: #ecf0f1;
+      &:hover, &:focus {
+        cursor: default;
+        color: #ecf0f1;
+      }
+    }
+  }
+  .navbar-brand {
+    color: #ecf0f1;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    &:hover, &:focus {
+      cursor: default;
+      color: #ecf0f1;
+    }
+  }
+  .shoppinglist {
+    margin-top: 20px;
   }
 }

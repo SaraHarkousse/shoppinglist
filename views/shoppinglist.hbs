@@ -1,7 +1,11 @@
-{{> add}}
-<ul>
-  {{#each shoppinglist}}
-    {{> item this}}
-  {{/each}}
-</ul>
-{{> footer}}
+<div class="container">
+  <div class="well shoppinglist">
+    {{> add}}
+    <ul class="list-group">
+      {{#each shoppinglist}}
+        {{> item this}}
+      {{/each}}
+    </ul>
+    {{> footer}}
+  </div>
+</div>

@@ -86,7 +86,7 @@ $(function () {
   initListObserver();
 
   // adding new items to the shopping list
-  $('.add-item-button').on('click', addShoppingItem);
+  $(':button').on('click', addShoppingItem);
 
   // toggle class & update done attribute in bdd
   $('ul').on('change', 'li :checkbox', function() {
