@@ -36,10 +36,9 @@ app.get('/javascripts/bundle.js', browserify('./client/script.js'));
 var dbConnectionString = process.env.MONGODB_URI || 'mongodb://localhost';
 mongoose.connect(dbConnectionString + '/shoppinglist');
 var db = mongoose.connection;
-console.log('####################################################################################');
+
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
-  console.log('####################################################################################');
   console.log('we are connected');
 });
 
