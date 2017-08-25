@@ -30,6 +30,9 @@ app.use(
 );
 
 // browserify
+browserify.settings({
+  transform: ['hbsfy']
+});
 app.get('/javascripts/bundle.js', browserify('./client/script.js'));
 
 //mongoose

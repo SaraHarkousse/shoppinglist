@@ -12,4 +12,19 @@ body {
       }
     }
   }
+  a {
+    padding-left: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .footer div {
+    float: left;
+    padding: 0 10px;
+  }
+  .hide {
+    display: none;
+  }
 }

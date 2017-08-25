@@ -5,7 +5,7 @@ var ShoppingItem = require('../../models/shoppinglist');
 
 router.route('/')
   .get(function(req, res, next) {
-    ShoppingItem.findAsync({})
+    ShoppingItem.findAsync({}, null, {sort: {"_id":1}})
     .then(function(items) {
       res.json(items);
     })
